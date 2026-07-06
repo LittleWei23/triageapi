@@ -1,0 +1,27 @@
+# Secrets — never commit
+.env
+*.pem
+**/service-account*.json
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Terraform — state files can contain secrets
+*.tfstate
+*.tfstate.*
+.terraform/
+*.tfvars
+
+# Java / Gradle
+sdk-java/build/
+sdk-java/.gradle/
+
+# Chroma local vector store
+api/chroma_db/
+
+# OS/editor noise
+.DS_Store
+.idea/
+.vscode/
